@@ -1,0 +1,182 @@
+.infos-topo {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: max(1vw, 10px);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.infos-topo > :nth-child(2){
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao {
+    margin-top: -15px;
+    padding: 0px 15px;
+    width: 100%;
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 15%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--branco);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.links-header {
+    display: flex;
+    gap: 30px;
+}
+
+.links-header a {
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: max(1vw, 15px);
+}
+
+.inscreva {
+    padding: 10px 15px;
+    background-color: var(--azulEscuro1);
+    color: var(--branco);
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+nav a {
+    font-size: max(1vw, 15px);
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--preto);
+    text-transform: uppercase;
+}
+
+.curso {
+    background-color: var(--azulClaro);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.curso > div {
+    width: 70%;
+    margin: 50px 0px;
+}
+
+.curso > div h1 {
+    font-size: max(3.5vw, 30px);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.curso > div p {
+    font-size: max(1vw, 16px);
+    font-weight: bolder;
+}
+
+.curso hr {
+    margin: 50px 0px;
+    border: 3px solid black;
+}
+
+.curso .inscreva {
+    padding: 20px;
+}
+
+.diferenciais {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferenciais div {
+    width: 100%;
+}
+
+.diferenciais h1 {
+    font-size: max(3.5vw, 30px);
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.caixas {
+    padding: 0px 15%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    margin: 70px 0px;
+}
+
+.caixa {
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: var(--cinza);
+    color: var(--preto);
+    text-align: center;
+}
+
+.desc-caixa {
+    font-size: max(2vw, 25px);
+    height: 20px;
+}
+
+.caixa a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+}
+
+.estrutura {
+    background-color: var(--azulEscuro2);
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.estrutura h1 {
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: max(3.5vw, 30px);
+    margin-bottom: 50px;
+}
+
+.estrutura button {
+    width: 90%;
+    text-align: start;
+    font-size: max(2.2vw, 25px);
+    font-weight: bolder;
+    color: var(--preto);
+    background-color: var(--azulClaro);
+}
+
+.dropdown-menu {
+    width: 90%;
+}
