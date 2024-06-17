@@ -14,13 +14,7 @@
 }
 
 .navegacao {
-    margin-top: -15px;
-    padding: 0px 15px;
-    width: 100%;
     background-color: var(--cinza);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -42,13 +36,19 @@
     gap: 30px;
 }
 
-.links-header a {
+.nav-link {
     display: flex;
     align-items: center;
     color: var(--branco);
     text-decoration: none;
     font-weight: bolder;
     font-size: max(1vw, 15px);
+}
+
+main > section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .inscreva {
@@ -59,6 +59,7 @@
     text-decoration: none;
     border-radius: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 nav {
@@ -159,6 +160,9 @@ nav a {
     background-color: var(--azulEscuro2);
     text-align: center;
     padding: 80px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .estrutura h1 {
@@ -166,6 +170,14 @@ nav a {
     color: var(--branco);
     font-size: max(3.5vw, 30px);
     margin-bottom: 50px;
+}
+
+.estrutura .dropdown {
+    width: 100vw;
+}
+
+.estrutura .dropdown .dropdown-menu {
+    width: 90%;
 }
 
 .estrutura button {
@@ -177,6 +189,264 @@ nav a {
     background-color: var(--azulClaro);
 }
 
-.dropdown-menu {
+.horas {
+    flex-direction: column;
+    padding: 100px;
+    margin: 10px;
+}
+
+.horas div:nth-child(1) {
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+
+.horas-div {
+    align-items: end;
+    text-align: end;
+    flex-direction: column;
+}
+    
+.horas-div h1 {
+    font-size: max(10vw, 60px);
+}
+
+.title-horas p {
+    margin-top: -70px;
+    font-size: max(2vw, 20px);
+}
+
+.horas-texto {
+    text-align: justify;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: max(2vw, 10px);
+}
+
+.horas .caixa {
+    margin-top: 50px;
+}
+
+.optativas {
+    flex-direction: column;
+    background-color: var(--azulEscuro2);
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.optativas h1 {
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: max(3.5vw, 30px);
+    margin-bottom: 50px;
+}
+
+.optativas div {
+    background-color: var(--branco);
+    border-radius: 10px;
     width: 90%;
+    padding: 50px;
+}
+
+.optativas div p {
+    border-bottom:  1px solid var(--preto);
+}
+
+.optativas a {
+    margin-top: 30px;
+    text-align: center;
+    width: 200px;
+}
+
+.edital {
+    justify-content: center;
+}
+
+.newsletter {
+    background-color: var(--azulClaro);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter h1 {
+    font-size: max(3.5vw, 30px);
+}
+
+.newsletter p {
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.newsletter label {
+    font-weight: bolder;
+}
+
+.input-email {
+    display: flex;
+    width: 100%;
+}
+
+.newsletter input, .newsletter button {
+    border: none;
+    outline: none;
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 15px;
+    transition: all .5s;
+}
+
+.newsletter input:focus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.newsletter button {
+    width: 20%;
+    padding: 15px;
+    border-radius: 0%;
+    transition: all .5s;
+}
+
+.newsletter button:hover {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fale-conosco {
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.fale-conosco h1 {
+    font-size: max(3.5vw, 30px);
+}
+
+.fale-conosco form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.form-fale {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-fale {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-fale label {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: max(1.4vw, 20px);
+}
+
+.input-fale input, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--cinza2);
+    padding: 20px;
+    transition: all .5s;
+}
+
+.fale-conosco form button {
+    width: 200px;
+    border: none;
+    outline: none;
+    transition: all .5s;
+}
+
+.fale-conosco form button:hover {
+    border-radius: 10px;
+}
+
+.input-fale input:focus, textarea:focus {
+    border-radius: 10px;
+}
+
+.mensagem {
+    width: 100%;
+}
+
+.whatsapp-float {
+    text-align: end;
+    padding-right: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+}
+
+.whatsapp-float a img{
+    max-width: 70px;
+}
+
+footer {
+    background-color: var(--cinza3);
+    color: var(--branco);
+}
+
+footer div:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+footer .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    font-size: max(1.3vw, 30px);
+    border-bottom: 2px solid var(--branco);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+footer a:hover {
+    color: var(--cinza);
+}
+
+.direitos, .direitos a {
+    background-color: var(--branco);
+    color: var(--preto);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.direitos img {
+    width: 150px;
+    margin: auto;
 }
