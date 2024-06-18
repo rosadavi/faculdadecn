@@ -67,6 +67,7 @@ main > section {
 
 .inscreva:hover {
     background-color: var(--azulEscuro3);
+    color: var(--branco);
 }
 
 nav {
