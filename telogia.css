@@ -1,6 +1,8 @@
 .infos-topo {
     width: 100%;
-    padding: 10px;
+    padding-top: 20px;  
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
     font-size: max(1vw, 10px);
@@ -46,7 +48,7 @@
 }
 
 main > section {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -60,6 +62,11 @@ main > section {
     border-radius: 10px;
     text-transform: uppercase;
     text-align: center;
+    transition:  all .5s;
+}
+
+.inscreva:hover {
+    background-color: var(--azulEscuro3);
 }
 
 nav {
@@ -156,6 +163,10 @@ nav a {
     top: 70px;
 }
 
+.caixa i {
+    font-size: max(2.5vw, 20px);
+}
+
 .estrutura {
     background-color: var(--azulEscuro2);
     text-align: center;
@@ -173,11 +184,24 @@ nav a {
 }
 
 .estrutura .dropdown {
-    width: 100vw;
+    width: 90vw;
+}
+
+.estrutura .dropdown button:hover, .estrutura .dropdown button:focus {
+    background-color: var(--branco);
 }
 
 .estrutura .dropdown .dropdown-menu {
     width: 90%;
+}
+
+.estrutura .dropdown .dropdown-menu a {
+    padding: 10px;
+    transition: all .5s;
+}
+
+.estrutura .dropdown .dropdown-menu a:hover {
+    background-color: var(--azulClaro);
 }
 
 .estrutura button {
@@ -203,6 +227,7 @@ nav a {
 
 .horas-div {
     align-items: end;
+    margin-left: 100px;
     text-align: end;
     flex-direction: column;
 }
@@ -221,6 +246,7 @@ nav a {
     padding-top: 30px;
     padding-left: 30px;
     font-size: max(2vw, 10px);
+    width: 60%;
 }
 
 .horas .caixa {
@@ -230,8 +256,8 @@ nav a {
 .optativas {
     flex-direction: column;
     background-color: var(--azulEscuro2);
-    padding: 50px;
-    margin-bottom: 50px;
+    padding: 30px;
+    height: 100%;
 }
 
 .optativas h1 {
@@ -244,7 +270,7 @@ nav a {
 .optativas div {
     background-color: var(--branco);
     border-radius: 10px;
-    width: 90%;
+    width: 80%;
     padding: 50px;
 }
 
@@ -256,6 +282,7 @@ nav a {
     margin-top: 30px;
     text-align: center;
     width: 200px;
+    
 }
 
 .edital {
