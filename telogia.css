@@ -1,3 +1,10 @@
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+    }
+}
+
 .infos-topo {
     width: 100%;
     padding: 20px;
