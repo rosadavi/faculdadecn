@@ -34,7 +34,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link inscreva" href="#">Inscreva-se</a>
+                                <a class="nav-link inscreva-header" href="#">Inscreva-se</a>
                             </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">Início</a>
@@ -60,7 +60,7 @@
             </nav>
         </section>
     </header>
-    <nav>
+    <nav class="cursos-nav">
         <a href="#">graduação</a>
         <a href="#">pós-graduação</a>
         <a href="#">extensão</a>
@@ -377,25 +377,5 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-function atualizarLarguraTela() {
-    // Obtém a largura da tela
-    var larguraTela = window.innerWidth;
-    
-    if(larguraTela <= 991) {
-        const button = document.querySelector('.div-d-flex');
-        button.classList.toggle('d-flex');
-    }
-    
-    // Aqui você pode fazer qualquer outra ação com a largura da tela, como atualizar um elemento na página
-    // Por exemplo, atualizar um elemento HTML com o valor da largura da tela
-}
-
-// Adiciona um event listener para o evento de redimensionamento da janela
-window.addEventListener('resize', atualizarLarguraTela);
-
-// Chama a função inicialmente para exibir a largura da tela quando a página é carregada
-atualizarLarguraTela();
-    </script>
 </body>
 </html>

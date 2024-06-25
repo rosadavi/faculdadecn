@@ -5,10 +5,89 @@
     }
 }
 
+@media screen and (max-width: 1070px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .info h1 {
+        width: 100%;
+        text-align: center;
+        font-size: max(2vw, 30px);
+    }
+
+    .info a {
+        width: 23%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .diferenciais .caixas {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .horas > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -80px;
+    }
+
+    .horas-div {
+        position: relative;
+        right: 100px;
+        width: 100%;
+    }
+
+    .horas-div h1, .horas-div div {
+        width: 100%;
+    }
+
+    .horas-texto {
+        margin-top: -100px;
+    }
+
+    .horas-texto p {
+        width: 90vw;
+        font-size: max(2vw, 18px);
+    }
+
+    .horas .caixa .desc-caixa {
+        font-size: max(2vw, 20px);
+    }
+
+    .edital {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .edital .caixa {
+        max-width: 400px;
+        margin: 0px 20px;
+    }
+
+    .fale-conosco {
+        height: 100vh;
+    }
+
+    .form-fale {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 .infos-topo {
     width: 100%;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     font-size: max(1vw, 10px);
     font-weight: bolder;
@@ -62,8 +141,14 @@
     font-size: max(1vw, 15px);
 }
 
+.cursos-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 main > section {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -78,9 +163,22 @@ main > section {
     text-transform: uppercase;
     text-align: center;
     transition:  all .5s;
+    font-size: max(1.4vw, 10px);
 }
 
-.inscreva:hover {
+.inscreva-header {
+    padding: 10px 15px;
+    background-color: var(--azulEscuro1);
+    color: var(--branco);
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    transition:  all .5s;
+}
+
+.inscreva:hover, .inscreva-header:hover {
     background-color: var(--azulEscuro3);
     color: var(--branco);
 }
@@ -108,12 +206,12 @@ nav a {
 }
 
 .curso > div {
-    width: 70%;
+    width: 80%;
     margin: 50px 0px;
 }
 
 .curso > div h1 {
-    font-size: max(3.5vw, 30px);
+    font-size: max(3.5vw, 50px);
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -249,7 +347,7 @@ nav a {
 }
     
 .horas-div h1 {
-    font-size: max(10vw, 60px);
+    font-size: max(10vw, 100px);
 }
 
 .title-horas p {
@@ -303,6 +401,8 @@ nav a {
 
 .edital {
     justify-content: center;
+    gap: 30px;
+    margin: 0px 20px;
 }
 
 .newsletter {
@@ -428,7 +528,7 @@ nav a {
 
 .whatsapp-float {
     text-align: end;
-    padding-right: 30px;
+    margin-right: 30px;
     position: fixed;
     bottom: 10px;
     right: 0px;
@@ -462,7 +562,7 @@ footer .info {
 
 footer h1 {
     text-transform: uppercase;
-    font-size: max(1.3vw, 30px);
+    font-size: max(1.3vw, 20px);
     border-bottom: 2px solid var(--branco);
 }
 
