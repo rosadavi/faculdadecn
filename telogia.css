@@ -148,7 +148,6 @@
 }
 
 main > section {
-    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -403,12 +402,14 @@ nav a {
     justify-content: center;
     gap: 30px;
     margin: 0px 20px;
+    height: 100vh;
 }
 
 .newsletter {
     background-color: var(--azulClaro);
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 }
 
 .newsletter h1 {
@@ -466,6 +467,7 @@ nav a {
     flex-direction: column;
     padding: 40px;
     gap: 20px;
+    margin-bottom: 200px;
 }
 
 .fale-conosco h1 {
