@@ -3,6 +3,26 @@
         position: absolute;
         right: 0;
     }
+    .nav-item.hide {
+        display: none;
+    }
+    .cursos-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cursos-nav {
+        display: none;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 1070px) {
@@ -139,12 +159,6 @@
     text-decoration: none;
     font-weight: bolder;
     font-size: max(1vw, 15px);
-}
-
-.cursos-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
 }
 
 main > section {
@@ -377,6 +391,7 @@ nav a {
     text-align: justify;
     padding-top: 30px;
     padding-left: 30px;
+    padding-right: 30px;
     font-size: max(2vw, 10px);
     width: 60%;
 }
@@ -433,6 +448,8 @@ nav a {
 
 .newsletter h1 {
     font-size: max(3.5vw, 30px);
+    padding: 0px 10px;
+    text-align: center;
 }
 
 .newsletter p {
@@ -471,7 +488,6 @@ nav a {
 }
 
 .newsletter button {
-    width: 20%;
     padding: 15px;
     border-radius: 0%;
     transition: all .5s;
